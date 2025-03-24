@@ -37,6 +37,12 @@ const options = {
     }
 });
 
-bot.launch().then(() => {
-    console.log("Bot ishlamoqda");
-});
+const StartBot = async () => {
+  bot.launch().then(() => {
+      console.log("Bot ishlamoqda");
+  });
+}
+
+module.exports = {
+  StartBot
+}
